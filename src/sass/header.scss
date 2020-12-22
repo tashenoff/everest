@@ -1,0 +1,170 @@
+.navbar{
+  display: flex;
+  @media screen and (max-width: 600px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+  ;
+
+  span{
+    font-size: 14px;
+  }
+  a{
+    color: #4F4F4F;
+  }
+  .logo{
+    img{
+      width: 100%;
+      padding: 20px;
+      @media screen and (max-width: 600px) {
+        width: 70%;
+        padding: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  ul{
+    list-style: none;
+   
+  }
+
+
+}
+
+.menu-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: #fff;
+    padding-left: 0;
+    padding: 20px;
+    z-index: 99999;
+  }
+
+  &__item{
+    text-transform: uppercase;
+    @media screen and (max-width: 600px) {
+      padding: 20px;
+      border: 1px solid red;
+    }
+    
+  }
+}
+
+.menu-header-right{
+  display: flex;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  &__icon{
+    width: 26px;
+    height: 25px;
+    display: block;
+    margin: 18px;
+    position: relative;
+
+    &:before{
+      content: '';
+      background-color: red;
+      width: 40px;
+      z-index: -2;
+      height: 40px;
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      border-radius: 50%;
+    }
+    img{
+      width: 100%;
+    }
+      }
+}
+
+
+.number-wrapp{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-banner{
+  background-image: url('/img/home-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-attachment: fixed;
+  @media screen and (max-width: 600px) {
+    height: 60vh;
+  }
+
+  h1 {
+ 
+    font-size: 60px;
+    color: #FFFFFF;
+    @media screen and (max-width: 600px) {
+      font-size: 33px;
+    }
+  }
+  p{
+    color: #fff;
+    margin: 30px 0;
+    font-size: 24px;
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 73px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+
+}
+
+
+.hamburger{
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}

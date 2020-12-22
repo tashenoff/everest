@@ -1,0 +1,61 @@
+.btn {
+  padding: 20px;
+
+  border: none;
+  display: inline;
+  position: relative;
+
+  &__primary {
+    background-color: $primary;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 36px;
+    font-size: 16px;
+    color: #fff;
+    width: 317px;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &--red {
+      background-color: $secondary;
+
+      color: #fff;
+      justify-content: space-between;
+    
+    }
+
+    &--white {
+      background-color: #fff;
+      
+     
+    }
+  }
+}
+
+.arrow-button {
+  background-image: url("/img/arrow-button.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 8px;
+  display: block;
+  margin-left: 16px;
+}
+
+.arrow-button-w {
+  background-image: url("/img/arrow-button-w.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 8px;
+  display: block;
+  margin-left: 16px;
+}

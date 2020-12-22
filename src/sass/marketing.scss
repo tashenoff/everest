@@ -1,0 +1,12 @@
+.marketing-bg{
+  background-image: url('/img/img-left.png');
+  display: block;
+  height:100%;
+  padding: 60px;
+  background-repeat: no-repeat;
+  @extend .container;
+  &__white{
+    background-color: #fff;
+    padding: 40px 40px;
+  }
+}
